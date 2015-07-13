@@ -18,9 +18,9 @@ dataSet = []
 labels = []
 fileIn = open('data/testSet.txt')
 for line in fileIn.readlines():
-	lineArr = line.strip().split('\t')
-	dataSet.append([float(lineArr[0]), float(lineArr[1])])
-	labels.append(float(lineArr[2]))
+    lineArr = line.strip().split('\t')
+    dataSet.append([float(lineArr[0]), float(lineArr[1])])
+    labels.append(float(lineArr[2]))
 
 dataSet = mat(dataSet)
 labels = mat(labels).T
